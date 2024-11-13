@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Lizard Spock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Add these to preload sound effects -->
+<audio id="move-sound" src="sounds/move.mp3" preload="auto"></audio>
+<audio id="powerup-sound" src="sounds/powerup.mp3" preload="auto"></audio>
+<audio id="win-sound" src="sounds/win.mp3" preload="auto"></audio>
+<audio id="lose-sound" src="sounds/lose.mp3" preload="auto"></audio>
+
+  <div class="game-container">
+    <h1>Rock Paper Scissors Lizard Spock</h1>
+    <div class="scoreboard">
+      <span id="player1-score">Player 1: 0</span> |
+      <span id="player2-score">Player 2: 0</span>
+    </div>
+    
+    <div class="moves">
+      <button onclick="playerMove('rock')">Rock</button>
+      <button onclick="playerMove('paper')">Paper</button>
+      <button onclick="playerMove('scissors')">Scissors</button>
+      <button onclick="playerMove('lizard')">Lizard</button>
+      <button onclick="playerMove('spock')">Spock</button>
+    </div>
+    <div class="power-ups">
+      <h3>Power-Ups</h3>
+      <button onclick="activatePowerUp('shield')">Shield</button>
+      <button onclick="activatePowerUp('double_damage')">Double Damage</button>
+    </div>
+    <div id="result"></div>
+    <div id="settings">
+      <h3>Game Settings</h3>
+      <button onclick="startGame('easy')">Easy AI</button>
+      <button onclick="startGame('hard')">Hard AI</button>
+      <button onclick="startGame('multiplayer')">Multiplayer</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

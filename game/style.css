@@ -1,0 +1,44 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: #84fb4c;
+  
+  .game-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #0548b4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    background-image:url("download\ .jpg");
+    background-size:cover;
+    
+  }
+  
+  .scoreboard {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  
+  .moves button, .power-ups button, #settings button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color:rgba(255, 255, 255, 0.3); 
+    font-size: medium;
+    font-weight:bolder;
+    color: rgb(237, 225, 225);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .moves button:hover, .power-ups button:hover, #settings button:hover {
+    background-color:rgba(255, 255, 255, 0.1);
+  }
+  
